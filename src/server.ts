@@ -9,6 +9,8 @@ import { Auth } from "./models/auth.schema";
 
 dotenv.config();
 
+console.log(process.env.MONGO_URI);
+
 mongoose
   .connect(process.env.MONGO_URI as string)
   .then(() => console.log("Mongodb connection success"))
