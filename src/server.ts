@@ -164,6 +164,8 @@ app.get("/resources", async (req, res) => {
     }
   }
 
+  return res.send("Make sure you logged in");
+
   // If Exist, verify Access Token
   // console.log({ accessToken, refreshToken });
 });
